@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: Roboto, Arial;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-left: 90px;
+    border-bottom: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+
+    margin-bottom: 0px;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80px;
+}
+
+nav div {
+    height: 40px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgba(102, 201, 102, 0.4);
+    padding: 10px;
+    border-radius: 12px;
+    width: 500px;
+    cursor: pointer;
+
+    transition: scale 0.4s;
+}
+
+p:hover {
+    scale: 1.08;
+}
+
+span {
+    color: lightblue;
+}

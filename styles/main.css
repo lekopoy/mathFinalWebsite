@@ -1,0 +1,128 @@
+main a {
+  text-decoration: none;
+}
+
+main p {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #1E293B;
+  padding: 10px;
+  margin-right: 15px;
+  border-radius: 12px;
+  width: 500px;
+  cursor: pointer;
+
+  transition: scale 0.5s;
+}
+
+main p:hover {
+  scale: 1.05;
+}
+
+.binary-text {
+  font-family: "Fira Code", Roboto, Arial;
+  font-weight: 800;
+  color: rgb(125, 207, 255);
+}
+
+.binary-text:active {
+  color: rgb(151, 217, 255);
+}
+
+.decimal-text {
+  font-family: Consolas, Roboto, Arial;
+  color: rgb(255, 123, 0);
+}
+
+.decimal-text:active {
+  color: rgb(255, 152, 56);
+}
+
+.hexadecimal-text {
+  font-family: "JetBrains Mono", Roboto, Arial;
+  font-weight: 200;
+  color: rgb(170, 66, 255);
+}
+
+.hexadecimal-text:active {
+  color: rgb(184, 98, 255);
+}
+
+.binary-section {
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.binary-section h1 {
+  font-family: "Fira Code", Roboto, Arial;
+  font-weight: 800;
+
+  text-decoration: underline;
+  text-decoration-style: dashed;
+
+  color: rgb(125, 207, 255);
+}
+
+.binary-boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.binary-boxes p {
+  min-height: 240px;
+}
+
+.binary-paragraph, .binary-paragraph-two, .binary-paragraph-three { 
+  transition: scale 0.4s;
+}
+
+.binary-paragraph:hover, .binary-paragraph-two:hover, .binary-paragraph-three:hover {
+  scale: 1.018;
+}
+
+.binary-paragraph-three {
+  width: 400px;
+}
+
+.bit {
+  color: #2CFF05;
+  font-weight: 900;
+  font-family: "Press Start 2P", Roboto, Arial;
+  font-size: 14px;
+  margin-left: 2px;
+}
+
+.bit:active {
+  color: #83ff6d;
+}
+
+.byte {
+  color: #7DF9FF;
+  font-weight: 900;
+  font-family: "Space Mono", Roboto, Arial;
+  font-size: 22px;
+  margin-left: 2px;
+}
+
+.byte:active {
+  color: #95faff;
+}
+
+.transistors-text {
+  font-family: "JetBrains Mono", Roboto, Arial;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(125, 207, 255);
+}
+
+.logic-gate-text {
+  font-family: "JetBrains Mono", Roboto, Arial;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(125, 207, 255);
+}

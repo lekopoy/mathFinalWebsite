@@ -6,38 +6,81 @@
   <title>Math Final</title>
 
   <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/baseSystems.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <header>
     <h1>Computer Bases</h1>
+    <nav class="header-buttons">
+      <button class="slideshow-button" onclick="alert('Entering Slideshow')">Slideshow</button>
+      <button class="game-button" onclick="alert('Entering Game')">Game</button>
+    </nav> 
   </header>
-  <nav>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </nav>
   <main>
-    
-    <p>
+    <p class="introduction">
       Computer Bases are a fundemental part of our society,
-      with their being—<span>binary</span>, <span>decimal</span>, and <span>hexadecimal</span>.
+      with their being—
+      <a class="binary-text" href="https://en.wikipedia.org/wiki/Binary_number" target="_blank">binary</a>, 
+      <a class="decimal-text" href="https://en.wikipedia.org/wiki/Decimal" target="_blank">decimal</a>, and 
+      <a class="hexadecimal-text" href="https://en.wikipedia.org/wiki/Hexadecimal" target="_blank">hexadecimal</a>.
+      These are the primary systems used in computers, with each serving an important purpose.
     </p>
-    <p class="binary">
-      Binary is the oldest computer system used in every
-      computer, it's a simple system based off electrical
-      states On & Off. One of these states are considered
-      a <span>bit</span>, When you take 8 bits, you get a
-      <span>byte</span>
-    </p>
-    <button onclick="alert('This Sucks')">Hello</button>
+    <div class="binary-section">
+      <h1 class="Binary Title">Binary</h1>
+      <div class="binary-boxes">
+        <p class="binary-paragraph">
+          Binary is a very prominent numerical system used in almost every
+          computer. Binary is in the base-2 numeral system(bi- meaning two, twice or double. -nary refering to numerical states)
+          In computer science it is applied by using the electrical
+          states On & Off(1 & 0). One of these states is
+          a <a class="bit" href="https://en.wikipedia.org/wiki/Bit" target="_blank">BIT</a>, When you take 8 bits, you get a
+          <a class="byte" href="https://en.wikipedia.org/wiki/Byte" target="_blank">BYTE</a>.
+        </p>
+        <p class="binary-paragraph-two">
+          We use <a class="transistors-text" href="https://en.wikipedia.org/wiki/Transistor">transistors</a> to make these electric states, they can either have electrical flow or not.
+          These transistors allow us to actually make bits; we then build <a class="logic-gate-text" href="https://en.wikipedia.org/wiki/Logic_gate">logic gates</a> out of these transistors.
+          Logic gates allow us to determine if certain conditions(different transistors status: on/off) are true or false.
+        </p>
+        <p class="binary-paragraph-three">
+          Inside a modern day computer their are millions of transistors sitting inside your cpu.
+        </p>
+      </div>
+    </div>
+    <div class="decimal-section">
+      <h1 class="Binary Title">Decimal</h1>
+      <div class="binary-boxes">
+        <p class="binary-paragraph">
+          Binary is a very prominent numerical system used in almost every
+          computer. Binary is in the base-2 numeral system(bi- meaning two, twice or double. -nary refering to numerical states)
+          In computer science it is applied by using the electrical
+          states On & Off(1 & 0). One of these states is
+          a <a class="bit" href="https://en.wikipedia.org/wiki/Bit" target="_blank">BIT</a>, When you take 8 bits, you get a
+          <a class="byte" href="https://en.wikipedia.org/wiki/Byte" target="_blank">BYTE</a>.
+        </p>
+        <p class="binary-paragraph-two">
+          We use <a class="transistors-text" href="https://en.wikipedia.org/wiki/Transistor">transistors</a> to make these electric states, they can either have electrical flow or not.
+          These transistors allow us to actually make bits; we then build <a class="logic-gate-text" href="https://en.wikipedia.org/wiki/Logic_gate">logic gates</a> out of these transistors.
+          Logic gates allow us to determine if certain conditions(different transistors status: on/off) are true or false.
+        </p>
+        <p class="binary-paragraph-three">
+          Inside a modern day computer their are millions of transistors sitting inside your cpu.
+        </p>
+      </div>
+    </div>
   </main>
+  <footer>
+
+  </footer>
 </body>
 </html>

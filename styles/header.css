@@ -1,0 +1,32 @@
+.header-buttons {
+  padding-right: 10px;
+}
+
+.slideshow-button, .game-button {
+  padding: 2px;
+  margin-left: 5px;
+
+  height: 40px;
+  width: 80px;
+
+  color: white;
+  font-weight: 700;
+
+  background-color: #2563EB;
+  border: none;
+  border-radius: 40px;
+
+  box-shadow: 0 2px #1b3a7e54;
+
+  transition: background-color 0.3s, scale 0.3s, box-shadow 0.3s;;
+}
+
+.slideshow-button:hover, .game-button:hover {
+  background-color: #3B82F6;
+  scale: 1.02;
+  box-shadow: 0 2px #2550ac54;
+}
+
+.slideshow-button:active, .game-button:active {
+  background-color: #6ea6ff;
+}

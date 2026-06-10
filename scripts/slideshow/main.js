@@ -1,15 +1,28 @@
 const sequence = [
   {
     name: "cb-decimal",
-    aniType: "animation-one"
+    aniType: "animation-one",
+    sectionChange: false
   },
   {
     name: "cb-hexadecimal",
-    aniType: "animation-three"
+    aniType: "animation-three",
+    sectionChange: false
   },
   {
     name: "cb-binary",
-    aniType: "animation-two"
+    aniType: "animation-two",
+    sectionChange: false
+  },
+  {
+    name: "binary-header",
+    aniType: "animation-three",
+    sectionChange: true
+  },
+  {
+    name: "binary",
+    aniType: "animation-three",
+    sectionChange: false
   }
 ]
 
@@ -20,7 +33,12 @@ window.addEventListener('keydown', (event) => {
 
   const elementToAnimate = document.querySelector(`.${currentAnimation.name}`);
 
-  console.log(`working, ${elementToAnimate.aniType}`)
+  if (currentAnimation.sectionChange === true) {
+    window.scrollTo({
+      top: 640,
+      behavior: 'smooth'
+    });
+  }
 
   elementToAnimate.classList.add(currentAnimation.aniType);
   currentAnimation = sequence[sequence.indexOf(currentAnimation) + 1]

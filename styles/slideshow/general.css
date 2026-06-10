@@ -8,6 +8,9 @@ body {
 
   min-height: 1000dvh;
   margin: 0;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {

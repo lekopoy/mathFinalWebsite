@@ -99,20 +99,20 @@ code {
     position: absolute;
     inset: 0;
 
-    background-image: url('../../images/binary.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('../../images/Z3_Deutsches_Museum.JPG');
+    background-size: auto;
+    background-position: right;
 
     mask-image:
         radial-gradient(
-            ellipse 40% 120% at 100% 50%,
+            ellipse 48% 120% at 100% 50%,
             black 20%,
             transparent 100%
         );
 
     -webkit-mask-image:
         radial-gradient(
-            ellipse 40% 120% at 100% 50%,
+            ellipse 48% 120% at 100% 50%,
             black 20%,
             transparent 100%
         );
@@ -135,8 +135,80 @@ code {
 }
 
 .binary .wrapper-2 {
-  background-color: rgba(88, 141, 255, 0.3);
-  width: 6px;
-  height: 90%;
+  background-color: rgba(126, 126, 126, 0.3);
+  width: 4px;
+  height: 100%;
   border-radius: 5px;
+}
+
+.binary .wrapper-1 {
+  margin-top: 5vh;
+}
+
+.binary-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  margin-top: 15px;
+  height: 30vh;
+  opacity: 0;
+
+  border-radius: 5% 0 5% 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.binary-2 .wrapper {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: start;
+
+  width: clamp(32%, 40%, 45%);
+  height: clamp(40vh, 50vh, 28vh);
+  
+  margin-left: clamp(2px, 2vw, 3vw);
+  margin-right: clamp(2px, 2vw, 3vw);
+
+  background-color: transparent;
+}
+
+.binary-2 .wrapper-2 {
+  background-color: rgba(126, 126, 126, 0.3);
+  width: 4px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.binary-2 .wrapper-1, .binary-2 .wrapper-3 {
+  margin-top: 5vh;
+}
+
+.binary-2 .wrapper-3 {
+  align-items: start;
+}
+
+.math {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  flex-direction: column;
+}
+
+.bool-math {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  width: 35px;
+  padding: 2px;
+  text-align: right;
+}
+
+.bM1 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }

@@ -23,6 +23,11 @@ const sequence = [
     name: "binary",
     aniType: "animation-three",
     sectionChange: false
+  },
+  {
+    name: "binary-2",
+    aniType: "animation-three",
+    sectionChange: true
   }
 ]
 

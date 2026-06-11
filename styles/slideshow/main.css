@@ -353,3 +353,27 @@ rt {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+.coding-langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 40%;
+}
+
+.cplus-pre {
+  margin-top: 0;
+  height: 20%;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+
+  padding: 15px;
+  border-radius: 8px;
+
+  overflow-x: auto;
+  white-space: pre;
+
+  font-family: Consolas, monospace;
+}

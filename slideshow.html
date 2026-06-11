@@ -132,35 +132,19 @@
       <p class="output">Outputs:</p>
       <code class="binary-example-2">Hello World</code>
       <p>
-        So we use different coding languages to write out code easier
+        So we use different coding languages to write out code easier like <span class="span-6">C++</span>
       </p>
       <div class="coding-langs">
-        <code>
-          section .data
-            msg db "Hello, World!", 10
-            msg_len equ $ - msg
-
-          section .text
-              global _start 
-
-          _start:
-              mov rax, 1                 
-              mov rdi, 1                
-              mov rsi, msg                 
-              mov rdx, msg_len               
-              syscall                         
-
-              mov rax, 60              
-              mov rdi, 0                     
-              syscall       
-        </code>
-        <code>
-          #include <iostream>
+        <pre class="cplus-pre">
+          #include &lt;iostream&gt;
 
           int main() {
-              std::cout << "Hello, World!" << std::endl;
+              std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
               return 0;
           }
+        </pre>
+        <code class="python">
+          print("Hello, World!")
         </code>
       </div>
     </div> 

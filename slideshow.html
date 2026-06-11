@@ -113,7 +113,9 @@
           <code class="bool-math bM1">01010101</code>
           2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
           So in our example <code class="bool-math">01010101</code> we can raise each 1 to
-          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
+          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>. Also,
+          most modern systems run on 64-bit integer systems, so instead of 01010101 we get
+          <code class="bool-math">0000000000000000000000000000000000000000000000000000000001010101</code>.
         </p>
       </div>
     </section>
@@ -226,20 +228,44 @@
           standard mathetmatics. We use it in this class, to perform math we can use
           the four basic operators, <span class="span-decimal">* / + -</span>. It allows us to perform equations like
           <code>4 * 3 = 12</code>, <code>12/2 = 6</code>, <code>1 + 1 = 2</code>, and <code>8-5 = 3</code>. We can expand
-          this with BEDMAS, <code>(2+2) * 4</code>
+          this with BEDMAS, <code>(2+2) * 4²</code> in which we first solve the brackets <code>(4) * 4²</code>, then the
+          exponent <code>4 * 16</code>, and finally it's just multiplying <code>4 * 16 = 64</code>.
         </p>
       </div>
       <div class="wrapper wrapper-2 bi2-2">
         
       </div>
-      <div class="wrapper wrapper-3 bi2-3">
-        <h2>Converting to Binary</h2>
+      <div class="wrapper wrapper-3">
+        <h2>Usage in Computer Science</h2>
         <p>
-          <code class="bool-math">byte = 8 bits</code>. E.g.
-          <code class="bool-math bM1">01010101</code>
-          2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
-          So in our example <code class="bool-math">01010101</code> we can raise each 1 to
-          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
+          Actual <span class="span-decimal">Base-10</span> is commonly used in high-level coding languages
+          to help make code more readable for humans. E.g. Arrays: <code>myArray = ["hello", "hi", "e"]</code>.
+          Now inside arrays you can access specific values by using the index position like this <code>myArray[1]</code>.
+          Now if I were to print this to the output <code>print(myArray[1])</code> you might assume it will print "hello", 
+          however it will actually output:
+        </p>
+        <code class="binary-example-2 binary-example-4">hi</code>
+        <p class="idk-anymore">
+          This is because the index position starts at 0, not 1; as Base-10 is the numbers 0-9.
+        </p>
+      </div>
+    </section>
+  </section>
+  <div class="title-flexbox citation-header">
+    <h1 class="head-title">Works Cited</h1>
+  </div>
+  <section class="citation-main">
+    <section class="citation">
+      <div class="wrapper wrapper-1 bi-1">
+        <p class="citation-text">Beeler, Madison S., and Michael P. Closs. “Decimal.” Wikipedia, https://en.wikipedia.org/wiki/Decimal. Accessed 10 June 2026.</p>
+        <p class="citation-text">“Binary Number.” Wikipedia, 4 5 2026, https://en.wikipedia.org/wiki/Binary_number. Accessed 10 June 2026.</p>
+        <p class="citation-text">“Boolean algebra.” Wikipedia, https://en.wikipedia.org/wiki/Boolean_algebra. Accessed 10 June 2026.</p>
+        <p class="citation-text yt-cite">"COMPUTER SCIENCE explained in 17 Minutes." YouTube, uploaded by Computer Science, May 19th 2024, <br>
+        https://www.youtube.com/watch?v=CxGSnA-RTsA. Accessed 10 June 2026.</p>
+        <p class="citation-text">Lapointe, Boby. “Hexadecimal.” Wikipedia, https://en.wikipedia.org/wiki/Hexadecimal. Accessed 10 June 2026.</p>
+        <p class="citation-text">“Logic Gate.” Wikipedia, 6 5 2026, https://en.wikipedia.org/wiki/Logic_gate. Accessed 10 June 2026.</p>
+        <p class="citation-text">Quevedo, Leonardo Torres, et al. “Computer.” Wikipedia, https://en.wikipedia.org/wiki/Computer. Accessed 10 June 2026.</p>
+        <p class="citation-text">“Z1 (computer).” Wikipedia, https://en.wikipedia.org/wiki/Z1_(computer). Accessed 10 June 2026.</p>
         </p>
       </div>
     </section>

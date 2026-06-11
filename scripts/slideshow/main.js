@@ -70,6 +70,16 @@ const sequence = [
     sectionChange: 0
   },
   {
+    name: "citation-header",
+    aniType: "animation-three",
+    sectionChange: 4600
+  },
+  {
+    name: "citation",
+    aniType: "animation-one",
+    sectionChange: 0
+  },
+  {
     name: "end",
     aniType: "animation-three",
     sectionChange: 0
@@ -91,5 +101,5 @@ window.addEventListener('keydown', (event) => {
   }
 
   elementToAnimate.classList.add(currentAnimation.aniType);
-  currentAnimation = sequence[sequence.indexOf(currentAnimation) + 1]
+  currentAnimation = sequence[sequence.indexOf(currentAnimation) + 1];
 });

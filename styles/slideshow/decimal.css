@@ -114,7 +114,7 @@
 }
 
 .decimal-2 .wrapper-3 {
-  align-items: start;
+  align-items: center;
 }
 
 .math {
@@ -218,7 +218,7 @@ rt {
   flex-direction: column;
 
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 
   width: clamp(32%, 40%, 45%);
   height: clamp(40vh, 54vh, 58vh);
@@ -270,4 +270,13 @@ rt {
   padding: 4px;
   font-size: 14px;
   font-family: "Fira Code", Roboto, Arial;
+}
+
+.binary-example-4 {
+  margin-top: 2px;
+  margin-left: 12px;
+}
+
+.idk-anymore {
+  margin-top: 2px;
 }

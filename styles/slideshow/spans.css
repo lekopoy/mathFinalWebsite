@@ -1,0 +1,56 @@
+.span-1 {
+  font-weight: 700;
+  color: lightblue;
+}
+
+.span-2 {
+  font-weight: 700;
+  color: lightgreen;
+}
+
+.span-3 {
+  font-weight: 700;
+  color: lightsalmon;
+}
+
+.span-4 {
+  font-weight: 700;
+  color: lightgoldenrodyellow;
+}
+
+.span-5 {
+  font-weight: 700;
+  color: lightpink;
+}
+
+.span-6 {
+  font-weight: 700;
+  color: lightcoral;
+}
+
+.span-7 {
+  font-weight: 700;
+  color: darkorange;
+}
+
+.span-decimal {
+  font-family: Consolas, Roboto, Arial;
+  color: rgb(255, 123, 0);;
+}
+
+.span-hexa {
+  font-family: "JetBrains Mono", Roboto, Arial;
+  font-weight: 200;
+  color: rgb(170, 66, 255);
+}
+
+.span-binary {
+  font-family: "Fira Code", Roboto, Arial;
+  font-weight: 800;
+  color: rgb(125, 207, 255);
+}
+
+.span-comp {
+  color: rgb(109, 255, 138);
+  text-shadow: 0 0 8px rgba(109, 255, 138, 0.692);
+}

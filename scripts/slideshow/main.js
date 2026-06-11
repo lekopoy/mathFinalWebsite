@@ -2,45 +2,60 @@ const sequence = [
   {
     name: "cb-decimal",
     aniType: "animation-one",
-    sectionChange: false
+    sectionChange: 0
   },
   {
     name: "cb-hexadecimal",
     aniType: "animation-three",
-    sectionChange: false
+    sectionChange: 0
   },
   {
     name: "cb-binary",
     aniType: "animation-two",
-    sectionChange: false
+    sectionChange: 0
   },
   {
     name: "binary-header",
     aniType: "animation-three",
-    sectionChange: true
+    sectionChange: 640
   },
   {
     name: "binary",
     aniType: "animation-three",
-    sectionChange: false
+    sectionChange: 0
   },
   {
     name: "binary-2",
     aniType: "animation-three",
-    sectionChange: true
+    sectionChange: 0
+  },
+  {
+    name: "binary-3",
+    aniType: "animation-one",
+    sectionChange: 1400
+  },
+  {
+    name: "bi3-1",
+    aniType: "animation-one",
+    sectionChange: 0
+  },
+  {
+    name: "end",
+    aniType: "animation-three",
+    sectionChange: 0
   }
 ]
 
 let currentAnimation = sequence[0];
 
 window.addEventListener('keydown', (event) => {
-  if (event.key !== "ArrowRight" && event.key !== "e" && event.key !== "Enter") return;
+  if (currentAnimation.name === "end" || event.key !== "ArrowRight" && event.key !== "e" && event.key !== "Enter") return;
 
   const elementToAnimate = document.querySelector(`.${currentAnimation.name}`);
 
-  if (currentAnimation.sectionChange === true) {
+  if (currentAnimation.sectionChange !== 0) {
     window.scrollTo({
-      top: 640,
+      top: currentAnimation.sectionChange,
       behavior: 'smooth'
     });
   }

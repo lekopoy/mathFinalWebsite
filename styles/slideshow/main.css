@@ -158,6 +158,8 @@ code {
 
   position: relative;
   overflow: hidden;
+
+  margin-bottom: 120px;
 }
 
 .binary-2 .wrapper {
@@ -200,6 +202,7 @@ code {
 }
 
 .bool-math {
+  font-weight: 600;
   background-color: lightgray;
   border: none;
   color: black;
@@ -209,6 +212,144 @@ code {
 }
 
 .bM1 {
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.bM2 {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+rt {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.binary-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 15px;
+  height: 60vh;
+
+  border-radius: 5% 0 5% 0;
+
+  position: relative;
+  overflow: hidden;
+
+  transform: translateX(-100vw);
+}
+
+.binary-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url('../../images/nasaPhoto.webp');
+    background-size: auto;
+    background-position: right;
+
+    mask-image: linear-gradient(
+        to left,
+        black 20%,
+        transparent 50%
+    );
+
+    -webkit-mask-image:
+        linear-gradient(
+        to left,
+        black 20%,
+        transparent 51%
+    );
+}
+
+.binary-3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url('../../images/computers.webp');
+    background-position: left;
+    background-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+        to right,
+        black 20%,
+        transparent 51%
+    );
+    -webkit-mask-image:
+        linear-gradient(
+        to right,
+        black 20%,
+        transparent 51%
+    );
+}
+
+.binary-3 .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: start;
+
+  width: clamp(32%, 40%, 45%);
+  height: clamp(40vh, 54vh, 58vh);
+  
+  margin-left: clamp(2px, 2vw, 3vw);
+  margin-right: clamp(2px, 2vw, 3vw);
+
+  border-radius: clamp(4px, 12px, 20px);
+
+  background-color: rgba(0, 0, 0, 0.35);
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+
+  backdrop-filter: blur(5px);
+
+  z-index: 1;
+
+  transform: translateX(-100vw);
+}
+
+.binary-3 .wrapper p {
+  text-align: center;
+  width: 90%;
+}
+
+.binary-example {
+  width: 90%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(66, 66, 66);
+  border-style: solid;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 6px;
+  font-size: 14px;
+  font-family: "Fira Code", Roboto, Arial;
+  margin-bottom: 6px;
+}
+
+.binary-example-2 {
+  margin-top: 10px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(66, 66, 66);
+  border-style: solid;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 4px;
+  font-size: 14px;
+  font-family: "Fira Code", Roboto, Arial;
+}
+
+.output {
+  margin: 0;
   text-decoration: underline;
   text-underline-offset: 2px;
 }

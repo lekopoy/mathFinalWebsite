@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="styles/slideshow/general.css">
   <link rel="stylesheet" href="styles/slideshow/main.css">
+  <link rel="stylesheet" href="styles/slideshow/spans.css">
   <link rel="stylesheet" href="styles/slideshow/animation.css">
 
   <link rel="stylesheet" href="styles/transitions.css">
@@ -31,7 +32,7 @@
     <div class="wrapper-1 cb-decimal">
       <h2>Decimal</h2>
       <p>
-        Decimal(Base-10) is the traditional number system used by humans,
+        Decimal(<span class="span-decimal">Base-10</span>) is the traditional number system used by humans,
         and it is very important to arithmetic. It features numbers 0-9, allowing
         you to do math such as <code>1+1=2</code>. This isn't used directly by
         computers but is used for humans to understand computers.
@@ -40,18 +41,18 @@
     <div class="wrapper-2 cb-hexadecimal">
       <h2>Hexadecimal</h2>
       <p>
-        Hexadecimal(Base-16), is a more enriched yet confusing positional numeral system.
-        It features numbers 0-9 same as Base-10 and includes the letters A to F in the alphabet,
-        representing digits 10-15, <code>0x4A = 74</code>. This is massively more present in computers
-        than Base-10.
+        <span>Hexadecimal</span>(<span class="span-hexa">Base-16</span>), is a more enriched yet confusing positional numeral system.
+        It features numbers 0-9 same as <span class="span-decimal">Base-10</span> and includes the letters A to F in the alphabet,
+        representing digits 10-15, <code>0x4A = 74</code>. Hexadecimal is massively more present in computers
+        than <span class="span-decimal">Base-10</span>.
       </p>
     </div>
     <div class="wrapper-3 cb-binary">
       <h2>Binary</h2>
       <p>
-        Binary(Base-2) is the most basic numeral system,
+        Binary(<span class="span-binary">Base-2</span>) is the most basic numeral system,
         it uses the digits 0 & 1. A number can be represented
-        in 8-bit binary like this <code>00111111 = 63</code>.
+        in 8-bit binary(<span class="span-binary">BYTES</span>) like this <code>00111111 = 63</code>.
         It's also rarely used in anything but computer science.                                 
       </p>
     </div>
@@ -63,11 +64,16 @@
     <div class="wrapper wrapper-1 bi-1">
       <h2>Invention of the Modern Computer</h2>
       <p>
-        Konrad Zuse is regarded as the inventor of the modern computer. 
-        Now the term "modern computer" does not refer to our current electronics,
-        however it refers to the introduction of binary and boolean logic into computers.
-        Computers had previously been incorperating Base-10 into the machine; leading to
-        much more complicated systems.
+        <span class="span-6">Konrad Zuse</span> is regarded as the inventor of the modern computer. 
+        Now the term "modern computer" does not refer to our current computers,
+        however it refers to the introduction of <span class="span-binary">binary</span> and <span class="span-binary">boolean</span> logic into computers.
+        Computers had previously been incorperating <span class="span-decimal">Base-10</span> into the machine; leading to
+        much more complicated systems. This event is exetremely historical significant as
+        it directly led to the modern day computers. Nowadays we use computers for everything, 
+        wether it be—<span class="span-2">banking</span>, <span class="span-3">government systems</span>, 
+        <span class="span-1">medicine development</span>, <span class="span-7">entertainment</span>, 
+        <span class="span-4">warfare</span>, <span class="span-5">space exploration</span>
+        and much more.
       </p>
     </div>
     <div class="wrapper wrapper-2 bi-2">
@@ -89,23 +95,75 @@
         Logic gates have multiple types with—AND, OR & NAND
         being some of the more prominent ones. Inside a modern day 
         computer lies hundreds of millions to billions of Logic Gates.
+        If an electricial current is flowing then it is On/True which is
+        1 in binary, if it's not flowing then it's Off/False which is 0.
+        These individual states of electricial flow are called bits.
       </p>
     </div>
     <div class="wrapper wrapper-2 bi2-2">
       
     </div>
     <div class="wrapper wrapper-3 bi2-3">
-      <h2>Adding in Binary</h2>
+      <h2>Converting to Binary</h2>
       <p>
-        Lets take the numbers 2 and 4, 15 and 11, 74 and 31. We will do addition in binary.
-        For 2 and 4 we can represent them as 0010 and 0100.
+        <code class="bool-math">byte = 8 bits</code>. E.g.
+        <code class="bool-math bM1">01010101</code>
+        2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
+        So in our example <code class="bool-math">01010101</code> we can raise each 1 to
+        a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
       </p>
-      <div class="math">
-        <code class="bool-math">0010</code>
-        <code class="bool-math bM1">+0100</code>
-        <code class="bool-math bM2">0110</code>
-      </div>
     </div>
+  </section>
+  <section class="binary-3">
+    <div class="wrapper wrapper-1 bi3-1">
+      <h2>Incorperation in Modern-day Computer Science</h2>
+      <p>
+        Today <span class="span-binary">Binary</span> is the primary arithmetic
+        behind <span class="span-comp">computers</span>. However, we don't actually code programs in raw <span class="span-binary">binary</span>.
+        If you wanted to simply print "Hello World" to your <span class="span-comp">computers terminal</span> with <span class="span-binary">binary</span>
+        it would look like this: 
+      </p>
+      <code class="binary-example">
+        1011100000000001000000000000000000000000101111110000000100000000000000000000000001
+        0010001011111000000000000000000000000000000000000000000000000010111010000010110000
+        0000000000000000000000001111000001011011100000111100000000000000000000000000001100
+        0111111111000011110000010101001000011001010110110001101100011011110010000001010111
+        01101111011100100110110001100100</code>
+      <p class="output">Outputs:</p>
+      <code class="binary-example-2">Hello World</code>
+      <p>
+        So we use different coding languages to write out code easier
+      </p>
+      <div class="coding-langs">
+        <code>
+          section .data
+            msg db "Hello, World!", 10
+            msg_len equ $ - msg
+
+          section .text
+              global _start 
+
+          _start:
+              mov rax, 1                 
+              mov rdi, 1                
+              mov rsi, msg                 
+              mov rdx, msg_len               
+              syscall                         
+
+              mov rax, 60              
+              mov rdi, 0                     
+              syscall       
+        </code>
+        <code>
+          #include <iostream>
+
+          int main() {
+              std::cout << "Hello, World!" << std::endl;
+              return 0;
+          }
+        </code>
+      </div>
+    </div> 
   </section>
   <script src="scripts/slideshow/main.js"></script>
 </body>

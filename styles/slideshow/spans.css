@@ -33,6 +33,11 @@
   color: darkorange;
 }
 
+.span-8 {
+  font-weight: 700;
+  color: rgb(255, 251, 0);
+}
+
 .span-decimal {
   font-family: Consolas, Roboto, Arial;
   color: rgb(255, 123, 0);;

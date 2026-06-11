@@ -1,85 +1,9 @@
-.title-flexbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  margin-bottom: 2vh;
-
-  width: 100%;
-  height: 100%;
-}
-
-.head-title {
-  position: relative;
-
-  top: 0;
-
-  margin-top: 2vh;
-}
-
-.computer-bases {
-  display: flex;
-  flex-direction: row;
-
-  align-items: center;
-  justify-content: space-evenly;
-
-  height: clamp(100px, 40vh, 45vh);
-  margin-bottom: 5vh;
-}
-
-.computer-bases .wrapper-1, .computer-bases .wrapper-2, .computer-bases .wrapper-3 {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: start;
-
-  width: clamp(10%, 30%, 40%);
-  height: clamp(20%, 90%, 92%);
-  
-  margin-left: clamp(2px, 2vw, 3vw);
-  margin-right: clamp(2px, 2vw, 3vw);
-
-  background-color: transparent;
-}
-
-h2 {
-  margin-bottom: 2px;
-}
-.computer-bases p {
-  margin-top: 2px;
-  height: clamp(20%, 90%, 92%);
-
-  margin-bottom: 5px;
-}
-
-.computer-bases .wrapper-1, .computer-bases .wrapper-3{
-  transform: translateX(-100vw);
-}
-
-.computer-bases .wrapper-2 {
+.hexa-header {
+  margin-top: 23vh;
   opacity: 0;
 }
 
-code {
-  font-family: Arial;
-  font-size: clamp(8px, 12px, 1rem);
-  font-weight: 500;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 2px;
-  border-width: 2px;
-  border-color: rgb(0, 55, 156);
-  border-style: solid;
-}
-
-.binary-header {
-  opacity: 0;
-}
-
-.binary {
+.hexa {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -94,7 +18,7 @@ code {
   overflow: hidden;
 }
 
-.binary::before {
+.hexa::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -118,7 +42,7 @@ code {
         );
 }
 
-.binary .wrapper {
+.hexa .wrapper {
   display: flex;
   flex-direction: column;
 
@@ -134,18 +58,18 @@ code {
   background-color: transparent;
 }
 
-.binary .wrapper-2 {
+.hexa .wrapper-2 {
   background-color: rgba(126, 126, 126, 0.3);
   width: 4px;
   height: 100%;
   border-radius: 5px;
 }
 
-.binary .wrapper-1 {
+.hexa .wrapper-1 {
   margin-top: 5vh;
 }
 
-.binary-2 {
+.hexa-2 {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -162,7 +86,7 @@ code {
   margin-bottom: 120px;
 }
 
-.binary-2 .wrapper {
+.hexa-2 .wrapper {
   display: flex;
   flex-direction: column;
 
@@ -178,18 +102,18 @@ code {
   background-color: transparent;
 }
 
-.binary-2 .wrapper-2 {
+.hexa-2 .wrapper-2 {
   background-color: rgba(126, 126, 126, 0.3);
   width: 4px;
   height: 100%;
   border-radius: 5px;
 }
 
-.binary-2 .wrapper-1, .binary-2 .wrapper-3 {
+.hexa-2 .wrapper-1, .hexa-2 .wrapper-3 {
   margin-top: 5vh;
 }
 
-.binary-2 .wrapper-3 {
+.hexa-2 .wrapper-3 {
   align-items: start;
 }
 
@@ -227,7 +151,7 @@ rt {
   font-size: 1rem;
 }
 
-.binary-3 {
+.hexa-3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +167,7 @@ rt {
   transform: translateX(-100vw);
 }
 
-.binary-3::before {
+.hexa-3::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -266,7 +190,7 @@ rt {
     );
 }
 
-.binary-3::after {
+.hexa-3::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -288,7 +212,7 @@ rt {
     );
 }
 
-.binary-3 .wrapper {
+.hexa-3 .wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -316,12 +240,12 @@ rt {
   transform: translateX(-100vw);
 }
 
-.binary-3 .wrapper p {
+.hexa-3 .wrapper p {
   text-align: center;
   width: 90%;
 }
 
-.binary-example {
+.hexa-example {
   width: 90%;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -335,7 +259,7 @@ rt {
   margin-bottom: 6px;
 }
 
-.binary-example-2 {
+.hexa-example-2 {
   margin-top: 10px;
   text-align: center;
   background-color: rgb(0, 0, 0);
@@ -346,24 +270,4 @@ rt {
   padding: 4px;
   font-size: 14px;
   font-family: "Fira Code", Roboto, Arial;
-}
-
-.output {
-  margin: 0;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.python {
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(66, 66, 66);
-  border-style: solid;
-  border-radius: 8px;
-  color: rgb(255, 255, 255);
-  padding: 4px;
-  font-size: 14px;
-  font-family: "Fira Code", Roboto, Arial;
-
-  margin-bottom: 10px;
 }

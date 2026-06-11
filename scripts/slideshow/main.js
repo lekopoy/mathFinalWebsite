@@ -40,6 +40,36 @@ const sequence = [
     sectionChange: 0
   },
   {
+    name: "hexa-header",
+    aniType: "animation-three",
+    sectionChange: 2400
+  },
+  {
+    name: "hexa",
+    aniType: "animation-three",
+    sectionChange: 0
+  },
+  {
+    name: "hexa-2",
+    aniType: "animation-three",
+    sectionChange: 0
+  },
+  {
+    name: "decimal-header",
+    aniType: "animation-three",
+    sectionChange: 3500
+  },
+  {
+    name: "decimal",
+    aniType: "animation-three",
+    sectionChange: 0
+  },
+  {
+    name: "decimal-2",
+    aniType: "animation-three",
+    sectionChange: 0
+  },
+  {
     name: "end",
     aniType: "animation-three",
     sectionChange: 0

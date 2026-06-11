@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="styles/slideshow/general.css">
   <link rel="stylesheet" href="styles/slideshow/main.css">
+  <link rel="stylesheet" href="styles/slideshow/hexadecimal.css">
+  <link rel="stylesheet" href="styles/slideshow/decimal.css">
   <link rel="stylesheet" href="styles/slideshow/spans.css">
   <link rel="stylesheet" href="styles/slideshow/animation.css">
 
@@ -60,94 +62,187 @@
   <div class="title-flexbox binary-header">
     <h1 class="head-title">Binary</h1>
   </div>
-  <section class="binary">
-    <div class="wrapper wrapper-1 bi-1">
-      <h2>Invention of the Modern Computer</h2>
-      <p>
-        <span class="span-6">Konrad Zuse</span> is regarded as the inventor of the modern computer. 
-        Now the term "modern computer" does not refer to our current computers,
-        however it refers to the introduction of <span class="span-binary">binary</span> and <span class="span-binary">boolean</span> logic into computers.
-        Computers had previously been incorperating <span class="span-decimal">Base-10</span> into the machine; leading to
-        much more complicated systems. This event is exetremely historical significant as
-        it directly led to the modern day computers. Nowadays we use computers for everything, 
-        wether it be—<span class="span-2">banking</span>, <span class="span-3">government systems</span>, 
-        <span class="span-1">medicine development</span>, <span class="span-7">entertainment</span>, 
-        <span class="span-4">warfare</span>, <span class="span-5">space exploration</span>
-        and much more.
-      </p>
-    </div>
-    <div class="wrapper wrapper-2 bi-2">
-      
-    </div>
-    <div class="wrapper wrapper-3 bi-3">
-      
-    </div>
-  </section>
-  <section class="binary-2">
-    <div class="wrapper wrapper-1 bi2-1">
-      <h2>Boolean Algebra</h2>
-      <p>
-        Boolean Algebra is the mathematics applied
-        to Base-2 allowing for arithmetic in Base-2.
-        It was introduced by George Boole back in 1847, 
-        and has since been expanded upon. We use Boolean 
-        Algebra with Transistors to create Logic Gates.
-        Logic gates have multiple types with—AND, OR & NAND
-        being some of the more prominent ones. Inside a modern day 
-        computer lies hundreds of millions to billions of Logic Gates.
-        If an electricial current is flowing then it is On/True which is
-        1 in binary, if it's not flowing then it's Off/False which is 0.
-        These individual states of electricial flow are called bits.
-      </p>
-    </div>
-    <div class="wrapper wrapper-2 bi2-2">
-      
-    </div>
-    <div class="wrapper wrapper-3 bi2-3">
-      <h2>Converting to Binary</h2>
-      <p>
-        <code class="bool-math">byte = 8 bits</code>. E.g.
-        <code class="bool-math bM1">01010101</code>
-        2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
-        So in our example <code class="bool-math">01010101</code> we can raise each 1 to
-        a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
-      </p>
-    </div>
-  </section>
-  <section class="binary-3">
-    <div class="wrapper wrapper-1 bi3-1">
-      <h2>Incorperation in Modern-day Computer Science</h2>
-      <p>
-        Today <span class="span-binary">Binary</span> is the primary arithmetic
-        behind <span class="span-comp">computers</span>. However, we don't actually code programs in raw <span class="span-binary">binary</span>.
-        If you wanted to simply print "Hello World" to your <span class="span-comp">computers terminal</span> with <span class="span-binary">binary</span>
-        it would look like this: 
-      </p>
-      <code class="binary-example">
-        1011100000000001000000000000000000000000101111110000000100000000000000000000000001
-        0010001011111000000000000000000000000000000000000000000000000010111010000010110000
-        0000000000000000000000001111000001011011100000111100000000000000000000000000001100
-        0111111111000011110000010101001000011001010110110001101100011011110010000001010111
-        01101111011100100110110001100100</code>
-      <p class="output">Outputs:</p>
-      <code class="binary-example-2">Hello World</code>
-      <p>
-        So we use different coding languages to write out code easier like <span class="span-6">C++</span>
-      </p>
-      <div class="coding-langs">
-        <pre class="cplus-pre">
-          #include &lt;iostream&gt;
-
-          int main() {
-              std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
-              return 0;
-          }
-        </pre>
-        <code class="python">
-          print("Hello, World!")
-        </code>
+  <section class="binary-main">
+    <section class="binary">
+      <div class="wrapper wrapper-1 bi-1">
+        <h2>Invention of the Modern Computer</h2>
+        <p>
+          <span class="span-6">Konrad Zuse</span> is regarded as the inventor of the modern computer. 
+          Now the term "modern computer" does not refer to our current computers,
+          however it refers to the introduction of <span class="span-binary">binary</span> and <span class="span-binary">boolean</span> logic into computers.
+          Computers had previously been incorperating <span class="span-decimal">Base-10</span> into the machine; leading to
+          much more complicated systems. This event is exetremely historical significant as
+          it directly led to the modern day computers. Nowadays we use computers for everything, 
+          wether it be—<span class="span-2">banking</span>, <span class="span-3">government systems</span>, 
+          <span class="span-1">medicine development</span>, <span class="span-7">entertainment</span>, 
+          <span class="span-4">warfare</span>, <span class="span-5">space exploration</span>
+          and much more.
+        </p>
       </div>
-    </div> 
+      <div class="wrapper wrapper-2 bi-2">
+        
+      </div>
+      <div class="wrapper wrapper-3 bi-3">
+        
+      </div>
+    </section>
+    <section class="binary-2">
+      <div class="wrapper wrapper-1 bi2-1">
+        <h2>Boolean Algebra</h2>
+        <p>
+          Boolean Algebra is the mathematics applied
+          to Base-2 allowing for arithmetic in Base-2.
+          It was introduced by George Boole back in 1847, 
+          and has since been expanded upon. We use Boolean 
+          Algebra with Transistors to create Logic Gates.
+          Logic gates have multiple types with—AND, OR & NAND
+          being some of the more prominent ones. Inside a modern day 
+          computer lies hundreds of millions to billions of Logic Gates.
+          If an electricial current is flowing then it is On/True which is
+          1 in binary, if it's not flowing then it's Off/False which is 0.
+          These individual states of electricial flow are called bits.
+        </p>
+      </div>
+      <div class="wrapper wrapper-2 bi2-2">
+        
+      </div>
+      <div class="wrapper wrapper-3 bi2-3">
+        <h2>Converting to Binary</h2>
+        <p>
+          <code class="bool-math">byte = 8 bits</code>. E.g.
+          <code class="bool-math bM1">01010101</code>
+          2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
+          So in our example <code class="bool-math">01010101</code> we can raise each 1 to
+          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
+        </p>
+      </div>
+    </section>
+    <section class="binary-3">
+      <div class="wrapper wrapper-1 bi3-1">
+        <h2>Incorperation in Modern-day Computer Science</h2>
+        <p>
+          Today <span class="span-binary">Binary</span> is the primary arithmetic
+          behind <span class="span-comp">computers</span>. However, we don't actually code programs in raw <span class="span-binary">binary</span>.
+          If you wanted to simply print "Hello World" to your <span class="span-comp">computers terminal</span> with <span class="span-binary">binary</span>
+          it would look like this: 
+        </p>
+        <code class="binary-example">
+          1011100000000001000000000000000000000000101111110000000100000000000000000000000001
+          0010001011111000000000000000000000000000000000000000000000000010111010000010110000
+          0000000000000000000000001111000001011011100000111100000000000000000000000000001100
+          0111111111000011110000010101001000011001010110110001101100011011110010000001010111
+          01101111011100100110110001100100</code>
+        <p class="output">Outputs:</p>
+        <code class="binary-example-2">Hello World</code>
+        <p>
+          So we use coding languages to write out code easier like <span class="span-8">Python</span>
+        </p>
+        <code class="python">print("Hello, World!")</code>
+        <p class="output">Outputs:</p>
+        <code class="binary-example-2">Hello, World!</code>
+        </div>
+      </div> 
+    </section>
+  </section>
+  <div class="title-flexbox hexa-header">
+    <h1 class="head-title">Hexadecimal</h1>
+  </div>
+  <section class="hexa-main">
+    <section class="hexa">
+      <div class="wrapper wrapper-1 bi-1">
+        <h2>Invention of the Modern Computer</h2>
+        <p>
+          <span class="span-6">Konrad Zuse</span> is regarded as the inventor of the modern computer. 
+          Now the term "modern computer" does not refer to our current computers,
+          however it refers to the introduction of <span class="span-binary">binary</span> and <span class="span-binary">boolean</span> logic into computers.
+          Computers had previously been incorperating <span class="span-decimal">Base-10</span> into the machine; leading to
+          much more complicated systems. This event is exetremely historical significant as
+          it directly led to the modern day computers. Nowadays we use computers for everything, 
+          wether it be—<span class="span-2">banking</span>, <span class="span-3">government systems</span>, 
+          <span class="span-1">medicine development</span>, <span class="span-7">entertainment</span>, 
+          <span class="span-4">warfare</span>, <span class="span-5">space exploration</span>
+          and much more.
+        </p>
+      </div>
+      <div class="wrapper wrapper-2 bi-2">
+        
+      </div>
+      <div class="wrapper wrapper-3 bi-3">
+        
+      </div>
+    </section>
+    <section class="hexa-2">
+      <div class="wrapper wrapper-1 bi2-1">
+        <h2>Boolean Algebra</h2>
+        <p>
+          Boolean Algebra is the mathematics applied
+          to Base-2 allowing for arithmetic in Base-2.
+          It was introduced by George Boole back in 1847, 
+          and has since been expanded upon. We use Boolean 
+          Algebra with Transistors to create Logic Gates.
+          Logic gates have multiple types with—AND, OR & NAND
+          being some of the more prominent ones. Inside a modern day 
+          computer lies hundreds of millions to billions of Logic Gates.
+          If an electricial current is flowing then it is On/True which is
+          1 in binary, if it's not flowing then it's Off/False which is 0.
+          These individual states of electricial flow are called bits.
+        </p>
+      </div>
+      <div class="wrapper wrapper-2 bi2-2">
+        
+      </div>
+      <div class="wrapper wrapper-3 bi2-3">
+        <h2>Converting to Binary</h2>
+        <p>
+          <code class="bool-math">byte = 8 bits</code>. E.g.
+          <code class="bool-math bM1">01010101</code>
+          2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
+          So in our example <code class="bool-math">01010101</code> we can raise each 1 to
+          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
+        </p>
+      </div>
+    </section>
+  </section>
+  <div class="title-flexbox decimal-header">
+    <h1 class="head-title">Decimal</h1>
+  </div>
+  <section class="decimal-main">
+    <section class="decimal">
+      <div class="wrapper wrapper-1 bi-1">
+        <h2>Origin</h2>
+        <p>
+          All of <span class="span-decimal">Base-10</span> can be traced back to ancient civilizations.
+          The Egyptian numerals, Brahmi numerals, Greek numerals, Hebrew numerals, Roman numerals, and Chinese
+          numerals all use decimal(<span class="span-decimal">Base-10</span>). A common belief is it originates
+          from the ten fingers on our hands, and people counted with their fingers.
+        </p>
+      </div>
+    </section>
+    <section class="decimal-2">
+      <div class="wrapper wrapper-1 bi2-1">
+        <h2>Basic Mathematics</h2>
+        <p>
+          <span class="span-decimal">Base-10</span> is the primary system used in
+          standard mathetmatics. We use it in this class, to perform math we can use
+          the four basic operators, <span class="span-decimal">* / + -</span>. It allows us to perform equations like
+          <code>4 * 3 = 12</code>, <code>12/2 = 6</code>, <code>1 + 1 = 2</code>, and <code>8-5 = 3</code>. We can expand
+          this with BEDMAS, <code>(2+2) * 4</code>
+        </p>
+      </div>
+      <div class="wrapper wrapper-2 bi2-2">
+        
+      </div>
+      <div class="wrapper wrapper-3 bi2-3">
+        <h2>Converting to Binary</h2>
+        <p>
+          <code class="bool-math">byte = 8 bits</code>. E.g.
+          <code class="bool-math bM1">01010101</code>
+          2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0 are the values for each bit in a byte.
+          So in our example <code class="bool-math">01010101</code> we can raise each 1 to
+          a certain 2 exponent. <code class="bool-math bM2">64 + 16 + 4 + 1 = 85</code>.
+        </p>
+      </div>
+    </section>
   </section>
   <script src="scripts/slideshow/main.js"></script>
 </body>

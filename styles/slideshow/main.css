@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
 
-  margin-bottom: 2vh;
+  margin-bottom: clamp(1vh, 2vh, 3vh);
 
   width: 100%;
   height: 100%;
@@ -14,6 +14,8 @@
   position: relative;
 
   top: 0;
+
+  font-size: clamp(1.5rem, 4vw, 3rem);
 
   margin-top: 2vh;
 }
@@ -26,7 +28,7 @@
   justify-content: space-evenly;
 
   height: clamp(100px, 40vh, 45vh);
-  margin-bottom: 5vh;
+  margin-bottom: clamp(3vh, 5vh, 6vh);
 }
 
 .computer-bases .wrapper-1, .computer-bases .wrapper-2, .computer-bases .wrapper-3 {
@@ -46,13 +48,16 @@
 }
 
 h2 {
-  margin-bottom: 2px;
+  margin-bottom: clamp(1px, 0.3vw, 4px);
+  font-size: clamp(1rem, 1.25vw, 2rem);
 }
 .computer-bases p {
   margin-top: 2px;
   height: clamp(20%, 90%, 92%);
 
-  margin-bottom: 5px;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+
+  margin-bottom: clamp(3px, 0.35vw, 7px);
 }
 
 .computer-bases .wrapper-1, .computer-bases .wrapper-3{
@@ -65,7 +70,7 @@ h2 {
 
 code {
   font-family: Arial;
-  font-size: clamp(8px, 12px, 1rem);
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   font-weight: 500;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -76,6 +81,7 @@ code {
 }
 
 .binary-header {
+  font-size: clamp(1.5rem, 4vw, 3rem);
   opacity: 0;
 }
 
@@ -84,8 +90,8 @@ code {
   justify-content: space-between;
   align-items: start;
 
-  margin-top: 15px;
-  height: 30vh;
+  margin-top: clamp(5px, 1vw, 25px);
+  height: clamp(15vh, 30vh, 40vh);
   opacity: 0;
 
   border-radius: 5% 0 5% 0;
@@ -126,12 +132,16 @@ code {
   justify-content: start;
 
   width: clamp(32%, 40%, 45%);
-  height: clamp(40vh, 50vh, 28vh);
+  height: clamp(40vh, 50vh, 54vh);
   
   margin-left: clamp(2px, 2vw, 3vw);
   margin-right: clamp(2px, 2vw, 3vw);
 
   background-color: transparent;
+}
+
+.binary-main .wrapper p, .hexa-main .wrapper p, .decimal-main .wrapper p {
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
 }
 
 .binary .wrapper-2 {
@@ -142,7 +152,7 @@ code {
 }
 
 .binary .wrapper-1 {
-  margin-top: 5vh;
+  margin-top: clamp(3vh, 5vh, 7vh);
 }
 
 .binary-2 {
@@ -150,8 +160,8 @@ code {
   justify-content: space-between;
   align-items: start;
 
-  margin-top: 15px;
-  height: 30vh;
+  margin-top: clamp(5px, 1vw, 25px);
+  height: clamp(15vh, 30vh, 40vh);
   opacity: 0;
 
   border-radius: 5% 0 5% 0;
@@ -159,7 +169,7 @@ code {
   position: relative;
   overflow: hidden;
 
-  margin-bottom: 120px;
+  margin-bottom: clamp(40px, 120px, 240px);
 }
 
 .binary-2 .wrapper {
@@ -170,7 +180,7 @@ code {
   justify-content: start;
 
   width: clamp(32%, 40%, 45%);
-  height: clamp(40vh, 50vh, 28vh);
+  height: clamp(40vh, 50vh, 54vh);
   
   margin-left: clamp(2px, 2vw, 3vw);
   margin-right: clamp(2px, 2vw, 3vw);
@@ -186,7 +196,7 @@ code {
 }
 
 .binary-2 .wrapper-1, .binary-2 .wrapper-3 {
-  margin-top: 5vh;
+  margin-top: clamp(3vh, 5vh, 7vh);
 }
 
 .binary-2 .wrapper-3 {
@@ -203,28 +213,29 @@ code {
 
 .bool-math {
   font-weight: 600;
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   background-color: lightgray;
   border: none;
   color: black;
-  width: 35px;
-  padding: 2px;
+  width: clamp(10px, 2vw, 45px);
+  padding: clamp(1px, 0.15vw, 4px);
   text-align: right;
 }
 
 .bM1 {
   text-align: center;
-  font-size: 14px;
-  padding: 2px;
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  padding: clamp(1px, 0.15vw, 4px);
 }
 
 .bM2 {
   font-weight: 900;
-  font-size: 14px;
+  font-size: clamp(0.5rem, 1vw, 1rem);
 }
 
 rt {
   font-weight: 900;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
 .binary-3 {
@@ -232,8 +243,8 @@ rt {
   justify-content: center;
   align-items: center;
 
-  margin-top: 15px;
-  height: 60vh;
+  margin-top: clamp(5px, 1vw, 25px);
+  height: clamp(20vh, 60vh, 100vh);
 
   border-radius: 5% 0 5% 0;
 
@@ -302,7 +313,7 @@ rt {
   margin-left: clamp(2px, 2vw, 3vw);
   margin-right: clamp(2px, 2vw, 3vw);
 
-  border-radius: clamp(4px, 12px, 20px);
+  border-radius: clamp(4px, 1vw, 20px);
 
   background-color: rgba(0, 0, 0, 0.35);
   border-width: 2px;
@@ -316,6 +327,10 @@ rt {
   transform: translateX(-100vw);
 }
 
+.bi3-1 {
+  padding: 4px;
+}
+
 .binary-3 .wrapper p {
   text-align: center;
   width: 90%;
@@ -327,31 +342,40 @@ rt {
   background-color: rgb(0, 0, 0);
   border-color: rgb(66, 66, 66);
   border-style: solid;
-  border-radius: 8px;
+  border-radius: clamp(4px, 0.75vw, 14px);
   color: rgb(255, 255, 255);
-  padding: 6px;
-  font-size: 14px;
+  padding: clamp(2px, 0.5vw, 12px);
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: clamp(0.6rem, 1vw, 1rem);
   font-family: "Fira Code", Roboto, Arial;
-  margin-bottom: 6px;
+  margin-bottom: clamp(2px, 0.5vw, 12px);
 }
 
 .binary-example-2 {
-  margin-top: 10px;
+  margin-top: clamp(3px, 0.4vw, 8px);
   text-align: center;
   background-color: rgb(0, 0, 0);
   border-color: rgb(66, 66, 66);
   border-style: solid;
-  border-radius: 8px;
+  border-radius: clamp(4px, 0.75vw, 14px);
   color: rgb(255, 255, 255);
-  padding: 4px;
-  font-size: 14px;
+  padding: clamp(2px, 0.4vw, 12px);
+  font-size: clamp(0.5rem, 1vw, 1rem);
   font-family: "Fira Code", Roboto, Arial;
+}
+
+.python-inform {
+  margin-top: clamp(0.5em, 1vw, 0.9em);
+  margin-bottom: clamp(0.5em, 1vw, 0.9em);
 }
 
 .output {
   margin: 0;
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: clamp(1px, 0.15vw, 4px);
 }
 
 .python {
@@ -359,17 +383,17 @@ rt {
   background-color: rgb(0, 0, 0);
   border-color: rgb(66, 66, 66);
   border-style: solid;
-  border-radius: 8px;
+  border-radius: clamp(4px, 0.75vw, 14px);
   color: rgb(255, 255, 255);
-  padding: 4px;
-  font-size: 14px;
+  padding: clamp(2px, 0.4vw, 12px);
+  font-size: clamp(0.5rem, 1vw, 1rem);
   font-family: "Fira Code", Roboto, Arial;
 
-  margin-bottom: 10px;
+  margin-bottom: clamp(4px, 0.75vw, 20px);
 }
 
 .citation-header {
-  margin-top: 20vh;
+  margin-top: clamp(5vh, 20vh, 40vh);
   opacity: 0;
 }
 
@@ -382,9 +406,12 @@ rt {
   justify-content: center;
   align-items: center;
 
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
+
   transform: translateX(-100vw);
 }
 
 .yt-cite {
   text-overflow:clip;
 }
+

@@ -125,27 +125,6 @@
   flex-direction: column;
 }
 
-.bool-math {
-  font-weight: 600;
-  background-color: lightgray;
-  border: none;
-  color: black;
-  width: 35px;
-  padding: 2px;
-  text-align: right;
-}
-
-.bM1 {
-  text-align: center;
-  font-size: 14px;
-  padding: 2px;
-}
-
-.bM2 {
-  font-weight: 900;
-  font-size: 14px;
-}
-
 rt {
   font-weight: 900;
   font-size: 1rem;

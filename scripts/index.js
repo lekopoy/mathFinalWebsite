@@ -6,5 +6,5 @@ slideshowButton.addEventListener('click', () => {
 });
 
 gameButton.addEventListener('click', () => {
-  window.location.href = "game.html";
+  window.location.href = "quiz.html";
 });

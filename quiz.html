@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Bases Quiz</title>
+
+  <link rel="stylesheet" href="styles/quiz/main.css">
+  <link rel="stylesheet" href="styles/quiz/animation.css">
+
+  <link rel="stylesheet" href="styles/transitions.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="title-flexbox">
+    <h1 class="head-title">Computer Bases Quiz</h1>
+    <p class="activity-description">
+      For this activity(if you can call it that) you will need to answer questions to prove you were listening.
+    </p>
+  </div>
+  <button class="start">Start Quiz</button>
+  <main>
+    <section class="question q1">
+      <div class="wrapper-1 cb-decimal">
+        <h2>What is a Binary Number</h2>
+        <input type="radio" class="binary-number-choice" id="o1" name="q1-choice" value="hex">
+        <label for="o1">A number system that uses 16 unique symbols, including the letters A–F, to represent values efficiently.</label>
+        <input type="radio" class="binary-number-choice" id="o2" name="q1-choice" value="decimal">
+        <label for="o2">A number system that uses the digits 0 through 9 and is primarily used for mathematical calculations.</label>
+        <input type="radio" class="binary-number-choice" id="o3" name="q1-choice" value="memory">
+        <label for="o3">A number that can only store positive values and is used to represent memory addresses inside a computer.</label>
+        <input type="radio" class="binary-number-choice" id="o4" name="q1-choice" value="binary">
+        <label for="o4">A number that can either be 1 or 0, that is commonly found in computers. It's values in a computer are dependent on electrical flow.</label>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q2">
+      <div class="wrapper-1 cb-decimal">
+        <h2>Decimal</h2>
+        <p>
+          Test
+        </p>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+  </main>
+  
+  <div class="percentage">
+    <p>1/20</p>
+    <progress id="questionProgress" value="4" max="10"></progress> 
+  </div>
+  
+  <meter id="scoreMeter" value="8" min="0" max="10" low="4" high="7" optimum="10"></meter>
+
+  <script src="scripts/quiz/main.js"></script>
+</body>
+</html>

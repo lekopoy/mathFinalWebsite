@@ -1,0 +1,13 @@
+.question {
+  display: none;
+
+  transform: translateX(-100vw);
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}

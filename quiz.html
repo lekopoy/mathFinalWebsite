@@ -22,42 +22,262 @@
   <div class="title-flexbox">
     <h1 class="head-title">Computer Bases Quiz</h1>
     <p class="activity-description">
-      For this activity(if you can call it that) you will need to answer questions to prove you were listening.
+      For this activity(if you can call it that) you will need to answer questions to prove you were listening
     </p>
+    <button class="start">Start Quiz</button>
   </div>
-  <button class="start">Start Quiz</button>
   <main>
-    <section class="question q1">
-      <div class="wrapper-1 cb-decimal">
-        <h2>What is a Binary Number</h2>
-        <input type="radio" class="binary-number-choice" id="o1" name="q1-choice" value="hex">
-        <label for="o1">A number system that uses 16 unique symbols, including the letters A–F, to represent values efficiently.</label>
-        <input type="radio" class="binary-number-choice" id="o2" name="q1-choice" value="decimal">
-        <label for="o2">A number system that uses the digits 0 through 9 and is primarily used for mathematical calculations.</label>
-        <input type="radio" class="binary-number-choice" id="o3" name="q1-choice" value="memory">
-        <label for="o3">A number that can only store positive values and is used to represent memory addresses inside a computer.</label>
-        <input type="radio" class="binary-number-choice" id="o4" name="q1-choice" value="binary">
-        <label for="o4">A number that can either be 1 or 0, that is commonly found in computers. It's values in a computer are dependent on electrical flow.</label>
+    <section class="question q1">  
+      <div class="question-part">
+        <h2>What is a Binary Number?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q1-choice" value="hex">
+          <label for="o1" class="choice-label">A number system that uses 16 unique symbols, including the letters A–F, to represent values efficiently.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q1-choice" value="decimal">
+          <label for="o2" class="choice-label">A number system that uses the digits 0 through 9 and is primarily used for mathematical calculations.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q1-choice" value="memory">
+          <label for="o3" class="choice-label">A number that can only store positive values and is used to represent memory addresses inside a computer.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q1-choice" value="binary">
+          <label for="o4" class="choice-label">A number that can either be 1 or 0, that is commonly found in computers. It's values in a computer are dependent on electrical flow.</label>
+        </div>
         <button class="next-question">Next</button>
       </div>
     </section>
     <section class="question q2">
-      <div class="wrapper-1 cb-decimal">
-        <h2>Decimal</h2>
-        <p>
-          Test
-        </p>
+      <div class="question-part">
+        <h2>What is <span>Base-16</span>?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q2-choice" value="fakeHex">
+          <label for="o1" class="choice-label">A numbering system that stores values in groups of 16 bytes and is primarily used for computer memory addresses.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q2-choice" value="hex">
+          <label for="o2" class="choice-label">A numbering system that uses 16 symbols (0–9 and A–F) to represent values, commonly used in computing and programming.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q2-choice" value="decimal">
+          <label for="o3" class="choice-label">A numbering system that uses the digits 0 through 9 and is the standard counting system used in everyday life.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q2-choice" value="binary">
+          <label for="o4" class="choice-label">A numbering system that only uses the digits 0 and 1 and is used by computers to store data.</label>
+        </div>
         <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q3">
+      <div class="question-part">
+        <h2>What does Decimal mean?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q3-choice" value="fakeDecimal">
+          <label for="o1" class="choice-label">A number that contains a decimal point, such as 3.14 or 12.5.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q3-choice" value="decimal">
+          <label for="o2" class="choice-label">A numbering system based on 10 symbols (0–9), which is the standard counting system used in everyday life.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q3-choice" value="fake">
+          <label for="o3" class="choice-label">A numbering system used exclusively by computers to store electrical signals and memory addresses.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q3-choice" value="allOfThem">
+          <label for="o4" class="choice-label">All of the Above.</label>
+        </div>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q4">
+      <div class="question-part">
+        <h2>Convert 13 to <span>4-bit Binary</span></h2>
+        <p>Remember each 0 represents 2ˣ starting from 2⁰ to 2³, and you need 4 zeros || Use a piece of paper if needed</p>
+        <input type="text" class="binary-number-convert" id="o1" name="q4-choice" placeholder="Enter Binary Number here">
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q5">
+      <div class="question-part">
+        <h2>Convert 71 to <span>8-bit Binary</span></h2>
+        <p class="no">Remember each 0 represents 2ˣ starting from 2⁰ to 2⁷, and you need 8 zeros || Use a piece of paper if needed</p>
+        <input type="text" class="binary-number-convert" id="o1" name="q5-choice" placeholder="Enter Binary Number here">
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q6">
+      <div class="decimal-hexadecimal">
+        <h2>Convert 10010111 to <span>Decimal and Hexadecimal</span></h2>
+        <p>Remember each 0 represents 2ˣ starting from 2⁰ to 2⁷ || Convert from Binary to Decimal, then Decimal to Hexadecimal || Use a piece of paper if needed</p>
+        <input type="text" class="binary-number-convert" id="q6-choice-1" placeholder="Enter Decimal Number here">
+        <input type="text" class="binary-number-convert" id="q6-choice-2" placeholder="Enter Hexadecimal Number here">
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q7">
+      <div class="question-part">
+        <h2>How is Binary applied in Computer Science?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q7-choice" value="correct">
+          <label for="o1" class="choice-label">Binary is used to represent and process data using combinations of 0s and 1s, which correspond to electrical states inside computer hardware.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q7-choice" value="wrong">
+          <label for="o2" class="choice-label">Binary is used to convert all computer data into decimal numbers before calculations are performed.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q7-choice" value="wrong-again">
+          <label for="o3" class="choice-label">Binary is primarily used to store colors and images because it contains only two symbols, making graphics easier to display.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q7-choice" value="wrong-again-again">
+          <label for="o4" class="choice-label">Binary is a special numbering system used only for internet communication and networking devices.</label>
+        </div>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q8">
+      <div class="question-part">
+        <h2>How is Base-10 applied in Computer Science?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q8-choice" value="wrong-again">
+          <label for="o1" class="choice-label">Base-10 is the numbering system computers use internally to store data and perform all calculations.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q8-choice" value="wrong">
+          <label for="o2" class="choice-label">Base-10 is only used for measuring computer performance and has no role in programming or software.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q8-choice" value="correct">
+          <label for="o3" class="choice-label">Base-10 is commonly used to display and input numbers in a way that humans can easily read and understand, even though computers process data in binary.</label>
+        </div> 
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q8-choice" value="wrong-again-again">
+          <label for="o4" class="choice-label">Base-10 uses the digits 0–F and is primarily used by programmers to represent memory addresses.</label>
+        </div>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q9">
+      <div class="question-part">
+        <h2>How is Hexadecimal used in Computer Science?</h2>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o1" name="q9-choice" value="wrong-again">
+          <label for="o1" class="choice-label">Hexadecimal is a numbering system used exclusively for internet addresses and network communication.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o2" name="q9-choice" value="wrong">
+          <label for="o2" class="choice-label">Hexadecimal is used to convert all computer data into decimal before it can be displayed on a screen.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o3" name="q9-choice" value="wrong-again-again">
+          <label for="o3" class="choice-label">Hexadecimal is the primary numbering system used by computer processors to perform calculations internally.</label>
+        </div>
+        <div class="choice-container">
+          <input type="radio" class="choice" id="o4" name="q9-choice" value="correct">
+          <label for="o4" class="choice-label">Hexadecimal is used to represent memory addresses, binary data, and color values in a shorter and more readable format than binary.</label>
+        </div>
+        <button class="next-question">Next</button>
+      </div>
+    </section>
+    <section class="question q10">
+      <div class="decode-question">
+        <h2>Convert this Binary to text(If you want just skip)</h2>
+        <p class="binary-decode">01001000 01100101 01101100 01101100 01101111 00101100 00100000 01010111 01101111 01110010 01101100 01100100 00100001</p>
+        <details>
+          <summary>Binary Keys</summary>
+
+          <pre class="binary-keys">
+            A = 01000001
+            B = 01000010
+            C = 01000011
+            D = 01000100
+            E = 01000101
+            F = 01000110
+            G = 01000111
+            H = 01001000
+            I = 01001001
+            J = 01001010
+            K = 01001011
+            L = 01001100
+            M = 01001101
+            N = 01001110
+            O = 01001111
+            P = 01010000
+            Q = 01010001
+            R = 01010010
+            S = 01010011
+            T = 01010100
+            U = 01010101
+            V = 01010110
+            W = 01010111
+            X = 01011000
+            Y = 01011001
+            Z = 01011010
+
+            a = 01100001
+            b = 01100010
+            c = 01100011
+            d = 01100100
+            e = 01100101
+            f = 01100110
+            g = 01100111
+            h = 01101000
+            i = 01101001
+            j = 01101010
+            k = 01101011
+            l = 01101100
+            m = 01101101
+            n = 01101110
+            o = 01101111
+            p = 01110000
+            q = 01110001
+            r = 01110010
+            s = 01110011
+            t = 01110100
+            u = 01110101
+            v = 01110110
+            w = 01110111
+            x = 01111000
+            y = 01111001
+            z = 01111010
+
+            , = 00101100
+            ! = 00100001
+          </pre>
+        </details>
+        
+        <input type="text" class="binary-number-convert" id="q10-choice" placeholder="Enter Text Here">
+        <div class="button-row">
+          <button class="next-question">Next</button>
+          <button class="skip-question">Skip</button>
+        </div>
+      </div>
+    </section>
+    <section class="question end">
+      <div class="idk">
+        <h2>You Finished!!</h2>
+        <p id="finalScore">Your Score:</p>
+        <p id="finalScoreText"></p>
       </div>
     </section>
   </main>
   
-  <div class="percentage">
-    <p>1/20</p>
-    <progress id="questionProgress" value="4" max="10"></progress> 
+  <div class="bars inactive">
+    <div class="percentage">
+      <p id="questionText"></p>
+      <progress id="questionProgress" value="4" max="10"></progress> 
+    </div>
+
+    <div class="scorePercentage">
+      <p id="scoreText"></p>
+      <meter id="scoreMeter" value="8" min="0" max="10" low="4" high="7" optimum="10"></meter>
+    </div>
   </div>
-  
-  <meter id="scoreMeter" value="8" min="0" max="10" low="4" high="7" optimum="10"></meter>
 
   <script src="scripts/quiz/main.js"></script>
 </body>

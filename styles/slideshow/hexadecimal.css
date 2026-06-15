@@ -23,8 +23,8 @@
     position: absolute;
     inset: 0;
 
-    background-image: url('../../images/Z3_Deutsches_Museum.JPG');
-    background-size: auto;
+    background-image: url('../../images/assemblylanguage.JPG');
+    background-size: contain;
     background-position: right;
 
     mask-image:
@@ -114,7 +114,7 @@
 }
 
 .hexa-2 .wrapper-3 {
-  align-items: start;
+  align-items: center;
 }
 
 .math {
